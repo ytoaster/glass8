@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from glass8.eu/donate by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Jul 2022 23:42:06 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="utf-8">
+
+	<title>Aero Glass for Win8+</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width">
+	</head>
+
+<body>
+	<div id="page">
+		<div id="header">
+			<img src="images/header.jpg">
+		    <ul id="menu">
+		      <li><a href="index.html">Aero Glass</a></li><li>|</li>
+		      <li><a href="features.html">Features</a></li><li>|</li>
+		      <li><a href="download.html">Download</a></li><li>|</li>
+		      <li><a href="guide.html">Guide</a></li><li>|</li>
+		      <li><a href="donate.html">Support</a></li><li>|</li>
+		      <li><a href="beta.html">Experimental versions</a></li>
+		    </ul>
+		</div>
+
+		<div id="content">
+
+This software has been developed in the free time as a private application for educational reasons and only a bit limited (but fully functional) release is freely available to the public.
+<br><br>
+Since Desktop Window Manager does not provide any official support for its extensibility, this Aero Glass extension internally uses many undocumented techniques to achieve the desired effect. Although these techniques
+have been developed precisely with an emphasis on stability, performance and compatibility, it may happen that some future Windows update will break it. The developer cannot ensure that this Aero Glass extension will be
+fully functional in such case but he will do its best to make it work as soon as possible.
+<br><br>
+If you are interested in the future development of this small utility and you would like to motivate the developer to spend his free time on fixing bugs and providing the compatibility with the future Windows updates, you
+can support the Aero Glass community, e.g. by creating your custom <a href="guide.html#themes">theme atlas file</a> or by sending a donation via PayPal.
+
+By donation you agree with the following statements:
+<ul id="donationinfo">
+	<li><u>You donate voluntarily without a claim for consideration.</u></li>
+	<li>You donate as a natural person and you will not use Aero Glass utility for business purposes.</li>
+	<li>PayPal fee is automatically payed from your donation.</li>
+	<li>PayPal mail box is not monitored thus you will NOT get any answer if you mail to it. Use <a href="http://www.msfn.org/board/forum/180-aero-glass-for-windows-8/">MSFN forum</a> for any kind of support.</li>
+	<li>Your donation does not turn any preview/alpha/beta/rc testing version into the full usable release without debugging means!</li>
+	<li>Use only the following "Donate" button for donation. Alternate methods are not processed automatically.</li>
+</ul>
+
+<b>You will get a thankful e-mail several minutes after your donation. If you don't get the e-mail, check your spambox and read MSFN forum.</b>
+
+<div id="donate">
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" onsubmit="return validateForm();">
+	    <div>
+	      	<label for="donation-3"><input id="donation-3" type="radio" name="amount" value="3.00">3 €</label>
+	      	<label for="donation-5"><input id="donation-5" type="radio" name="amount" value="5.00" checked>5 €</label>
+	      	<label for="donation-10"><input id="donation-10" type="radio" name="amount" value="10.00">10 €</label><br>
+	      	<label for="donation-15"><input id="donation-15" type="radio" name="amount" value="15.00">15 €</label>
+	      	<label for="donation-20"><input id="donation-20" type="radio" name="amount" value="20">20 €</label>
+	      	<span style="display: inline-block; width: 6em"><input id="donation-other" type="radio" name="amount" value=""><input id="donation-other-value" type="number" name="other" style="width:4em" title="Enter your custom donation amount."> €</span>
+	    </div>
+		<input type="hidden" name="cmd" value="_donations">
+		<input type="hidden" name="business" value="YXMJ2GD6YCAXG">
+		<input type="hidden" name="lc" value="CZ">
+		<input type="hidden" name="item_name" value="Voluntary contribution to support the development of Aero Glass for Win8.x">
+		<input type="hidden" name="currency_code" value="EUR">
+		<input type="hidden" name="notify_url" value="https://www.glass8.eu/ipn">
+		<input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHosted">
+		<input type="submit" name="submit" value="Donate via PayPal">
+
+		<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+	</form>
+	<script type="text/javascript">
+    	var other = document.getElementById("donation-other");
+        var other_value = document.getElementById('donation-other-value');
+		other_value.onclick = function() {
+			other.checked = true;
+		}
+
+		function validateForm() {
+
+			if(other.checked) {
+				if(other_value.value < 2) {
+					alert('Please, enter at least 2 € to cover PayPal fee.');
+					return false;
+				}
+				other.value = other_value.value;
+			}
+			return true;
+		}
+	</script>
+</div>
+		</div>
+
+		<div id="footer">
+        	<div style="float:left; margin: 10px">
+				<a href="sign/index.html">Sign in to your donator account</a>
+			</div>
+	    	<div style="margin: 10px">Copyright © 2013-2022 Big Muscle</span>
+	  	</div>
+	</div>
+
+</body>
+
+<!-- Mirrored from glass8.eu/donate by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Jul 2022 23:42:06 GMT -->
+</html>
